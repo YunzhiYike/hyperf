@@ -1,4 +1,80 @@
-# v3.1.16 - TBD
+# v3.1.21 - TBD
+
+## Optimized
+
+- [#6716](https://github.com/hyperf/hyperf/pull/6716) [#6717](https://github.com/hyperf/hyperf/pull/6717) Optimized exchange declaration for amqp consumer messages.
+- [#6731](https://github.com/hyperf/hyperf/pull/6731) Updated InteractsWithModelFactory to handle missing dependencies.
+
+# v3.1.20 - 2024-04-26
+
+## Added
+
+- [#6709](https://github.com/hyperf/hyperf/pull/6709) Added default `onClose` method for rpc Server.
+- [#6712](https://github.com/hyperf/hyperf/pull/6712) Add new methods in `Hyperf\Collection\Collection`.
+
+## Optimized
+
+- [#6700](https://github.com/hyperf/hyperf/pull/6700) Optimized the implementation of `Pluralizer`.
+
+# v3.1.19 - 2024-04-18
+
+## Fixed
+
+- [#6689](https://github.com/hyperf/hyperf/pull/6689) Fixed bug that socket-io cannot parse data with `?` but without `query`.
+- [#6697](https://github.com/hyperf/hyperf/pull/6697) Fixed bug that `withoutBody` cannot not work when using `Swow`.
+
+## Added
+
+- [#6680](https://github.com/hyperf/hyperf/pull/6680) Added `Hyperf\Coordinator` helper functions.
+- [#6681](https://github.com/hyperf/hyperf/pull/6681) Added option `type` for `gen:constant` which you can be used to generate files with `const` or `enum`.
+
+## Optimized
+
+- [#6686](https://github.com/hyperf/hyperf/pull/6686) Optimized `FswatchDriver` which don't restart server by empty reading.
+- [#6698](https://github.com/hyperf/hyperf/pull/6698) Upgrade `hyperf/engine` to `v2.11`.
+- [#6696](https://github.com/hyperf/hyperf/pull/6696) Automatic declare exchange when produce message.
+
+# v3.1.18 - 2024-04-12
+
+## Added
+
+- [#6674](https://github.com/hyperf/hyperf/pull/6674) Added getConfig for redisPool.
+
+## Fixed
+
+- [#6664](https://github.com/hyperf/hyperf/pull/6664) Fixed bug that `isset` cannot check `null` in `Hyperf\Collection\Collection`.
+
+## Optimized
+
+- [#6668](https://github.com/hyperf/hyperf/pull/6668) Added error handling when using `callback` in multiplexed RPC.
+
+# v3.1.17 - 2024-04-10
+
+## Added
+
+- [#6652](https://github.com/hyperf/hyperf/pull/6652) Added Str trim methods.
+- [#6658](https://github.com/hyperf/hyperf/pull/6658) HEAD requests, attempt fallback to GET in `MiddlewareManager`.
+- [#6665](https://github.com/hyperf/hyperf/pull/6665) Added logger for `Websocket`.
+
+# Changed
+
+- [#6661](https://github.com/hyperf/hyperf/pull/6661) Use `PHP_BINARY` instead of `php` as default php binary path for `hyperf/watcher`.
+
+# v3.1.16 - 2024-04-02
+
+## Added
+
+- [#6632](https://github.com/hyperf/hyperf/pull/6632) Support to set headers for `websocket-client`.
+- [#6648](https://github.com/hyperf/hyperf/pull/6648) Return result about websocket sender`push``disconnect`.
+
+## Fixed
+
+- [#6633](https://github.com/hyperf/hyperf/pull/6633) Fixed bug that crontab will be skipped sometimes.
+- [#6635](https://github.com/hyperf/hyperf/pull/6635) Fixed AMQP `ConsumerMessage::getQueue` return type.
+
+## Optimized
+
+- [#6640](https://github.com/hyperf/hyperf/pull/6640) Support PHP8 Attribute for `hyperf/constants`.
 
 ## Added
 
